@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zelf pizza maken</title>
+  <style>
+    :root { --tomaat:#d84931; --groen:#297451; --room:#fff7e8; --inkt:#2c2925; --zacht:#f5e4c3; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--inkt); background:var(--room); font-family:Arial, Helvetica, sans-serif; line-height:1.5; }
+    .hero { min-height:520px; display:grid; grid-template-columns:42% 58%; background:var(--tomaat); }
+    .hero-copy { padding:80px max(7vw,42px); display:flex; flex-direction:column; justify-content:center; color:white; }
+    .hero-copy p { margin:0 0 12px; font-weight:700; letter-spacing:.11em; font-size:.82rem; color:#ffe6c7; }
+    h1 { font-size:clamp(3.7rem,8vw,7rem); line-height:.9; margin:0 0 28px; letter-spacing:-.07em; }
+    .hero-copy .intro { font-size:1.18rem; line-height:1.45; color:#fff1df; font-weight:400; letter-spacing:0; max-width:340px; }
+    .hero-photo { min-height:520px; background:url('assets/cover.jpg') center/cover no-repeat; }
+    main { max-width:1160px; margin:auto; padding:72px 28px 90px; }
+    section { margin:0 0 92px; }
+    h2 { font-size:clamp(2rem,4vw,3.2rem); line-height:1; letter-spacing:-.045em; margin:0 0 10px; }
+    .lead { color:#645c52; margin:0 0 30px; font-size:1.08rem; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:46px; align-items:center; }
+    .photo { width:100%; height:360px; object-fit:cover; border-radius:24px; display:block; box-shadow:0 12px 30px rgba(69,36,17,.13); }
+    .list { list-style:none; margin:0; padding:0; }
+    .list li { padding:17px 18px 17px 26px; margin-bottom:10px; background:#fffdf9; border-left:8px solid var(--tomaat); border-radius:0 12px 12px 0; font-size:1.05rem; }
+    .tools li { border-left-color:var(--groen); }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:30px; }
+    .step { padding:26px; min-height:210px; border-radius:22px; background:#fffdf9; }
+    .number { display:inline-grid; place-items:center; width:42px; height:42px; margin-bottom:35px; border-radius:50%; background:var(--groen); color:white; font-weight:700; }
+    .step h3 { font-size:1.35rem; margin:0 0 8px; }
+    .step p { margin:0; color:#645c52; }
+    .bake { background:var(--tomaat); color:white; padding:48px; border-radius:26px; }
+    .bake h2 { color:white; }
+    .bake p { font-size:1.14rem; max-width:600px; color:#ffead2; }
+    .bake strong { color:white; }
+    footer { text-align:center; padding:30px; color:#786f64; font-size:.95rem; }
+    @media (max-width:760px) { .hero,.split { grid-template-columns:1fr; } .hero-copy { min-height:400px; padding:70px 34px; } .hero-photo { min-height:330px; } main { padding:50px 22px; } .steps { grid-template-columns:1fr; } .photo { height:280px; } section { margin-bottom:65px; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-copy"><p>STAP VOOR STAP</p><h1>Pizza<br>maken</h1><p class="intro">Met een paar ingrediënten maak je thuis een heerlijke pizza.</p></div>
+    <div class="hero-photo" role="img" aria-label="Verse pizza met kaas, tomatensaus en basilicum"></div>
+  </header>
+  <main>
+    <section class="split">
+      <div><h2>Ingrediënten</h2><p class="lead">Voor 2 kleine pizza's.</p><ul class="list">
+        <li><strong>250 g bloem</strong> voor het pizzadeeg</li><li><strong>1 zakje droge gist</strong> (ongeveer 7 g)</li><li><strong>150 ml lauwwarm water</strong>, 1 eetlepel olijfolie en een snufje zout</li><li><strong>4 eetlepels tomatensaus</strong> en 150 g mozzarella</li><li><strong>Toppings</strong> zoals basilicum, paprika, champignons, olijven of salami</li>
+      </ul></div>
+      <img class="photo" src="assets/ingredients.jpg" alt="Pizzadeeg wordt uitgerold met een deegroller">
+    </section>
+    <section class="split">
+      <img class="photo" src="assets/tools.jpg" alt="Pizzasnijder als keukengereedschap">
+      <div><h2>Keukengerei</h2><p class="lead">Vraag hulp aan een volwassene bij de oven.</p><ul class="list tools"><li><strong>Kom</strong> voor deeg en saus</li><li><strong>Deegroller</strong> om het deeg plat te maken</li><li><strong>Bakplaat</strong> voor in de oven</li><li><strong>Ovenhandschoenen</strong> voor de hete bakplaat</li></ul></div>
+    </section>
+    <section>
+      <h2>Het pizzadeeg</h2><p class="lead">Maak het deeg eerst, zodat het even kan rusten.</p>
+      <div class="steps"><article class="step"><span class="number">1</span><h3>Meng</h3><p>Doe bloem, gist en zout in een kom. Voeg het lauwwarme water en de olijfolie toe.</p></article><article class="step"><span class="number">2</span><h3>Kneed</h3><p>Kneed het deeg ongeveer 8 minuten tot het zacht en glad voelt.</p></article><article class="step"><span class="number">3</span><h3>Laat rusten</h3><p>Dek de kom af en laat het deeg 30 minuten op een warme plek rijzen.</p></article></div>
+    </section>
+    <section>
+      <h2>Zo maak je de pizza</h2><p class="lead">Werk rustig en maak de pizza zoals jij hem lekker vindt.</p>
+      <div class="steps"><article class="step"><span class="number">1</span><h3>Rol het deeg</h3><p>Maak een ronde bodem van ongeveer één centimeter dik.</p></article><article class="step"><span class="number">2</span><h3>Voeg saus toe</h3><p>Smeer een dun laagje tomatensaus over de bodem.</p></article><article class="step"><span class="number">3</span><h3>Voeg kaas toe</h3><p>Verdeel mozzarella over de tomatensaus.</p></article></div>
+    </section>
+    <section class="split">
+      <img class="photo" src="assets/toppings.jpg" alt="Verse ingrediënten voor pizza">
+      <div><h2>De toppings</h2><p class="lead">Leg niet te veel op de pizza. Dan wordt de bodem beter gaar.</p><ul class="list"><li>Leg groenten, olijven of salami op de kaas.</li><li>Gebruik verse basilicum voor extra smaak.</li><li>Bewaar een paar basilicumblaadjes voor na het bakken.</li></ul></div>
+    </section>
+    <section class="split"><div class="bake"><h2>Bakken en eten</h2><p>Bak de pizza op <strong>220 °C</strong> voor ongeveer <strong>10 tot 15 minuten</strong>.</p><p>Wacht een paar minuten, snijd de pizza in stukken en eet smakelijk!</p></div><img class="photo" src="assets/slice.jpg" alt="Pizza wordt in punten gesneden"></section>
+  </main>
+  <footer>Veel plezier met pizza maken!</footer>
+</body>
+</html>
